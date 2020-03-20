@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/mainmenu">
+
+    <EditText
+        android:id="@+id/login_username"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="#555555"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/login_pass"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="#555555"
+        android:background="@drawable/edit_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/login_username"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:background="@drawable/rounded_corner2"
+        android:textColor="@color/bgcolor"
+        android:layout_centerHorizontal="true"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/login_pass"
+        android:text="LOGIN"
+        android:onClick="login"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:background="@drawable/rounded_corner2"
+        android:textColor="@color/bgcolor"
+        android:layout_centerHorizontal="true"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/loginButton"
+        android:text="SIGN UP"
+        android:onClick="register"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

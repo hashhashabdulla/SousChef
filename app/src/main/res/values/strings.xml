@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SousChef</string>
+    <string name="here_s_a_list_of_your_favorite_recipes">Here\'s a list of your favorite Recipes:</string>
+    <string name="username"><i>Enter Username</i></string>
+    <string-array name="spinnerfilter">
+        <item>Veg</item>
+        <item>Non Veg</item>
+        <item>I don\'t care, show me all</item>
+    </string-array>
+</resources>

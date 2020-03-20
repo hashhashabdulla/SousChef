@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#AAADD8E6">
+
+    <ImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+    <TextView
+        android:id="@+id/recipeName"
+        android:textColor="@color/bgcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/recipeImage"
+        android:layout_toRightOf="@+id/recipeImage"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/listRatingBar"
+        android:progressTint="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:ratingBarStyleSmall"
+        android:layout_below="@+id/recipeName"
+        android:layout_toRightOf="@+id/recipeImage"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

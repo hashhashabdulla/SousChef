@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/lbluebutton">
+
+    <LinearLayout
+        android:id="@+id/ratereviewprogresslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/ratereviewprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:background="@color/lightblue"
+        android:progressTint="@color/bgcolor"
+        android:progressBackgroundTint="#80FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/rateText"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write a Review:"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/ratingBar"/>
+
+    <EditText
+        android:id="@+id/review"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rateText"
+        android:layout_alignStart="@+id/rateText"
+        android:layout_below="@+id/rateText"
+        android:layout_marginTop="20dp"
+        android:ems="18"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/lbluebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review"
+        android:layout_centerHorizontal="true"
+        android:text="SUBMIT"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/reviewListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitButton"
+        android:layout_marginTop="20dp">
+    </ListView>
+
+</RelativeLayout>

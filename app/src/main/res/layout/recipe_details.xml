@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/lbluebutton">
+
+    <LinearLayout
+        android:id="@+id/recipedetailsprogresslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/recipedetailsprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="9.9"
+    android:id="@+id/scrollview"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/recipeImage2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/recipeTitle"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/recipeImage2"
+        />
+
+    <RatingBar
+        android:id="@+id/avgRatingBar"
+        android:progressTint="@color/bgcolor"
+        android:background="@color/lightblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeTitle"
+        android:layout_alignStart="@id/recipeTitle"
+        android:layout_alignLeft="@id/recipeTitle"
+        style="?android:ratingBarStyleSmall"
+        android:layout_marginTop="10dp"
+        android:stepSize="0.1"/>
+
+    <TextView
+        android:id="@+id/textViewCookingTime"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_below="@+id/recipeImage2"
+        android:layout_marginTop="20dp"
+        android:text="Cooking Time"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cookingtime"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCookingTime"
+        android:layout_alignStart="@+id/textViewCookingTime"
+        android:layout_below="@+id/textViewCookingTime"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewCookingTime"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Description"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDescription"
+        android:layout_alignStart="@+id/textViewDescription"
+        android:layout_below="@+id/textViewDescription"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewIngredients"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Ingredients"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ingredientsLayout"
+        android:background="@color/lightblue"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewIngredients"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewSteps"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ingredientsLayout"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Steps"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/stepsLayout"
+        android:background="@color/lightblue"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSteps"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"></LinearLayout>
+
+    <TextView
+        android:id="@+id/vid_urlTextView"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepsLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Video Link"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/vid_url"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:textColorLink="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vid_urlTextView"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rateButton"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/lbluebutton"
+        android:padding="10dp"
+        android:layout_below="@id/vid_url"
+        android:layout_centerHorizontal="true"
+        android:text="Ratings &amp; Reviews"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
+</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:weightSum="2"
+        android:layout_below="@id/stepsLayout"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/addToFavoritesButton"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/lbluebutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADD TO FAVORITES"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/removeFavoritesButton"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/lbluebutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remove from favorites"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+</LinearLayout>

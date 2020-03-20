@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="#AAADD8E6">
+
+    <TextView
+        android:id="@+id/ingItem"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="9.7"
+        android:textColor="@color/bgcolor"
+        android:text="TextView"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:background="@drawable/rounded_corner"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/lbluebutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="Remove" />
+</LinearLayout>

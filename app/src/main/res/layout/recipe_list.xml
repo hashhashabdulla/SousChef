@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/lbluebutton">
+
+    <LinearLayout
+        android:id="@+id/recipelistprogresslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/recipelistprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@color/bgcolor"
+        android:background="@color/lightblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Recipe List:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/filtertextView"
+        android:textColor="@color/bgcolor"
+        android:background="@color/lightblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Filter:"
+        android:fontFamily="serif"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/filterspinner"
+        android:background="@color/lightblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinnerfilter"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@id/filtertextView"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@color/dropdowncolor">
+    </Spinner>
+
+    <ListView
+        android:id="@+id/recipeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/filtertextView"
+        android:layout_marginTop="13dp" />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/lbluebutton">
+
+    <LinearLayout
+        android:id="@+id/quicksearchprogresslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/quicksearchprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enterrecipeTextView"
+        android:background="@color/lightblue"
+        android:textColor="@color/bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a Recipe Name"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/actextviewbuttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_below="@+id/enterrecipeTextView">
+
+        <AutoCompleteTextView
+            android:id="@+id/quicksearchbox"
+            android:textColor="@color/bgcolor"
+            android:background="@drawable/autocomplete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="7.5"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:popupBackground="@color/dropdowncolor"/>
+
+        <Button
+            android:id="@+id/quicksearchButton"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/lbluebutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="SEARCH"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/quicksearchListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actextviewbuttonlayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"></ListView>
+
+</RelativeLayout>

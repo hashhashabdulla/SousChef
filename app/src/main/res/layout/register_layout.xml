@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="#555555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="120dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="#555555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/firstName"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/firstName"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/new_username"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="#555555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/new_password"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="#555555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/new_username"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/new_username"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/new_username"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:background="@drawable/rounded_corner2"
+        android:textColor="@color/bgcolor"
+        android:layout_width="167dp"
+        android:layout_height="65dp"
+        android:text="SIGN UP"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/new_password"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="signup"/>
+
+</android.support.constraint.ConstraintLayout>
